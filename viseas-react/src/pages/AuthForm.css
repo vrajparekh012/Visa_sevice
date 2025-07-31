@@ -5,14 +5,14 @@
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif; /* Updated font */
 }
 
 .auth-container h1 {
   text-align: center;
   margin-bottom: 24px;
   font-weight: 600;
-  color: #2c3e50;
+  color: #111111; /* Dark heading */
 }
 
 .auth-message {
@@ -20,8 +20,8 @@
   margin-bottom: 16px;
   padding: 10px;
   border-radius: 8px;
-  background-color: #f0f9ff;
-  color: #2980b9;
+  background-color: #f5f5f5; /* Neutral background */
+  color: #000000; /* Black text */
   font-size: 14px;
 }
 
@@ -41,39 +41,41 @@
 }
 
 .auth-container input:focus {
-  border-color: #3498db;
+  border-color: #000000; /* Black border on focus */
 }
 
 .auth-container button[type="submit"] {
   padding: 12px;
-  background-color: #3498db;
-  color: #ffffff;
+  background-color: #000000; /* Black button */
+  color: #ffffff; /* White text */
   border: none;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .auth-container button[type="submit"]:hover {
-  background-color: #2c80b4;
+  background-color: #d4d4d4; /* Light grey hover */
+  color: #000000; /* Black text */
 }
 
 .auth-toggle {
   margin-top: 20px;
   background: none;
   border: none;
-  color: #3498db;
+  color: #000000; /* Black text */
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
   text-align: center;
   display: block;
   width: 100%;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .auth-toggle:hover {
-  color: #2c3e50;
+  color: #000000; /* Black text */
+  background-color: #f0f0f0; /* Light grey hover */
 }
