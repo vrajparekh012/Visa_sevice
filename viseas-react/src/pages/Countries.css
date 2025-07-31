@@ -1,0 +1,238 @@
+/* Main Container */
+.country-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.header-section h1 {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.header-section p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* Horizontal Scroll Container */
+.horizontal-scroll {
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem 0 2rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.countries-horizontal {
+  display: inline-flex;
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+
+/* Country Cards */
+.country-card-horizontal {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  text-align: center;
+  flex-shrink: 0;
+  border: 1px solid #e0e0e0;
+}
+
+.country-card-horizontal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  border-color: #3498db;
+}
+
+.country-flag-img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.country-card-horizontal h3 {
+  color: #2c3e50;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Country Details View */
+.country-details {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #eaeaea;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.country-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail-flag-img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.country-details h2 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.detail-item {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+}
+
+.detail-item h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.detail-item p {
+  color: #34495e;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* Scrollbar Styling */
+.horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #3498db;
+  border-radius: 10px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .country-container {
+    padding: 1.5rem;
+  }
+  
+  .header-section h1 {
+    font-size: 1.8rem;
+  }
+  
+  .country-card-horizontal {
+    min-width: 120px;
+    padding: 1.2rem;
+  }
+  
+  .country-flag-img {
+    width: 70px;
+    height: 45px;
+  }
+  
+  .country-details {
+    padding: 1.5rem;
+  }
+  
+  .detail-flag-img {
+    width: 80px;
+    height: 50px;
+  }
+  
+  .country-details h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .country-card-horizontal {
+    min-width: 100px;
+    padding: 1rem;
+  }
+  
+  .country-flag-img {
+    width: 60px;
+    height: 40px;
+  }
+  
+  .country-card-horizontal h3 {
+    font-size: 0.9rem;
+  }
+}
