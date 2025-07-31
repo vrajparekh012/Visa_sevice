@@ -7,6 +7,61 @@
   color: #333;
 }
 
+/* Visa Type Dropdown */
+.detail-item select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc; /* Neutral border */
+  border-radius: 6px;
+  background-color: #f8f8f8; /* Soft neutral background */
+  font-size: 1rem;
+  color: #333; /* Dark readable text */
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.detail-item select:hover {
+  background-color: #f1f1f1; /* Slightly darker on hover */
+}
+
+.detail-item select:focus {
+  outline: none;
+  border-color: #44403c; /* Matches primary neutral */
+  box-shadow: 0 0 0 3px rgba(68, 64, 60, 0.2);
+}
+
+/* Label styling for Visa Type */
+.detail-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #44403c; /* Neutral heading color */
+  margin-bottom: 8px;
+}
+
+/* Apply Button Styling */
+.apply-btn-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.apply-btn {
+  background-color: #44403c; /* Neutral primary */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #292524; /* Darker hover */
+  transform: translateY(-2px);
+}
+
 /* Header Section */
 .header-section {
   text-align: center;
