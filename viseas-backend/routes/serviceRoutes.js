@@ -3,7 +3,8 @@ const express = require('express');
 const Razorpay = require('razorpay');
 const router = express.Router();
 const serviceController = require('../controllers/serviceController');
-require('.env').config(); // 🔥 This loads your .env file!
+require('dotenv').config();
+ // 🔥 This loads your .env file!
 
 
 // Existing route

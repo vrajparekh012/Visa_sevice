@@ -2,8 +2,8 @@ module.exports = {
   db: {
     host: 'localhost',
     user: 'root',
-    password: 'BGMIVALORANT', // update if your MySQL has a password
-    database: 'viseas_db',
+    password: '', // update if your MySQL has a password
+    database: 'visa_info', // update to your actual database name
     port: 3306,
   },
   auth: {
